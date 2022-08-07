@@ -5,6 +5,9 @@
 		},
 		{
 			"path": "apps-and-services\\reacting-next"
+		},
+		{
+			"path": "apps-and-services\\min-max-tic-tac-toe"
 		}
 	],
 	"settings": {}
