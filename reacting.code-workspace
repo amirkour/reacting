@@ -1,19 +1,19 @@
 {
-	"folders": [
-		{
-			"path": "projects/reacting-next"
-		},
-		{
-			"path": "projects/min-max-tic-tac-toe"
-		},
-		{
-			"path": "."
-		}
-	],
-	"settings": {
-		"editor.fontFamily": "'JetBrains Mono','Cascadia Mono',  Menlo, Monaco, 'Courier New', monospace",
-		"files.exclude": {
-			"projects/": true
-		}
-	}
+  "folders": [
+    {
+      "path": "."
+    },
+    {
+      "path": "projects/reacting-next"
+    },
+    {
+      "path": "projects/min-max-tic-tac-toe"
+    }
+  ],
+  "settings": {
+    "editor.fontFamily": "'JetBrains Mono','Cascadia Mono',  Menlo, Monaco, 'Courier New', monospace",
+    "files.exclude": {
+      "projects/": true
+    }
+  }
 }
