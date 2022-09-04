@@ -1,7 +1,6 @@
 {
   "projects": {
     "projects/reacting-next": "https://github.com/amirkour/reacting-next.git",
-    "projects/min-max-tic-tac-toe": "https://github.com/amirkour/min-max-tic-tac-toe.git",
-    "projects/tic-tac-toe-svc": "https://github.com/amirkour/tic-tac-toe-svc.git"
+    "projects/min-max-tic-tac-toe": "https://github.com/amirkour/min-max-tic-tac-toe.git"
   }
 }
