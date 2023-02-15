@@ -3,3 +3,4 @@
 /projects/tic-tac-toe-svc/
 /projects/tic-tac-toe-handler/
 .DS_Store
+node_modules
