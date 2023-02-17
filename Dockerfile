@@ -15,7 +15,7 @@ RUN npm run build
 FROM public.ecr.aws/lambda/nodejs:18
 WORKDIR ${LAMBDA_TASK_ROOT}
 
-COPY --from=builder ${LAMBDA_TASK_ROOT}/min-max-tic-tac-toe/dist/src/ min-max-tic-tac-toe/
-COPY --from=builder ${LAMBDA_TASK_ROOT}/tic-tac-toe-handler/dist/src/ tic-tac-toe-handler/
+COPY --from=builder ${LAMBDA_TASK_ROOT}/min-max-tic-tac-toe/dist/ min-max-tic-tac-toe/
+COPY --from=builder ${LAMBDA_TASK_ROOT}/tic-tac-toe-handler/dist/ tic-tac-toe-handler/
 
 CMD ["./tic-tac-toe-handler/index.handler"]

@@ -1,0 +1,15 @@
+version: '3'
+services:
+  ttt:
+    image: public.ecr.aws/lambda/nodejs:18
+    restart: always
+    volumes:
+      - ./projects/tic-tac-toe-handler/dist/:/var/task/tic-tac-toe-handler
+      - ./projects/min-max-tic-tac-toe/dist/:/var/task/min-max-tic-tac-toe
+    working_dir: /var/task
+    command: ./tic-tac-toe-handler/index.handler
+    # env_file: ./.api.env
+    ports:
+      - 9000:8080
+volumes:
+  reacting-ttt:
