@@ -7,6 +7,7 @@
     "deploy:ttt:build": "source .env && docker build -t tic-tac-toe-handler .",
     "deploy:ttt:tag": "source .env && docker tag tic-tac-toe-handler:latest $AWS_ACCOUNT.dkr.ecr.$AWS_REGION.amazonaws.com/tic-tac-toe-handler:latest",
     "deploy:ttt:push": "source .env && docker push $AWS_ACCOUNT.dkr.ecr.$AWS_REGION.amazonaws.com/tic-tac-toe-handler:latest",
-    "deploy:ttt": "npm run deploy:ttt:login && npm run deploy:ttt:build && npm run deploy:ttt:tag && npm run deploy:ttt:push"
+    "deploy:ttt:lambda": "source .env && aws lambda update-function-code --function-name tic-tac-toe-handler-v2 --image-uri $AWS_ACCOUNT.dkr.ecr.$AWS_REGION.amazonaws.com/tic-tac-toe-handler:latest",
+    "deploy:ttt": "npm run deploy:ttt:login && npm run deploy:ttt:build && npm run deploy:ttt:tag && npm run deploy:ttt:push && npm run deploy:ttt:lambda"
   }
 }
