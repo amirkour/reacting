@@ -4,3 +4,4 @@
 /projects/tic-tac-toe-handler/
 .DS_Store
 node_modules
+.env*
